@@ -15,11 +15,11 @@ TagManager:
   - 
   - PostProcessing
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Environment
+  - Track
+  - CrashObject
+  - Kart
+  - TrainingCheckpoints
   - 
   - 
   - 
