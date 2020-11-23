@@ -1,6 +1,8 @@
 ﻿using MLAgents;
 using KartGame.KartSystems;
 using UnityEngine;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace KartGame.AI
 {
@@ -75,6 +77,8 @@ namespace KartGame.AI
         public float TowardsCheckpointReward;
         [Tooltip("Typically if the agent moves faster, we want to reward it for finishing the track quickly.")]
         public float SpeedReward;
+        [Tooltip("Will reward agent for good powerups, but punish agent for bad powerups")]
+        public float PowerUpPenalty;
 #endregion
 
 #region ResetParams
@@ -194,7 +198,9 @@ namespace KartGame.AI
         public override void CollectObservations()
         {
             AddVectorObs(kart.LocalSpeed());
-
+            var powerUpIds = kart.activePowerupList.Select(y => y.PowerUpID).Select(y => System.Int32.Parse(y));
+            var sum = powerUpIds.Sum(x => x);
+            AddVectorObs(sum);
             // Add an observation for direction of the agent to the next checkpoint.
             var next          = (checkpointIndex + 1) % Colliders.Length;
             var nextCollider  = Colliders[next];
@@ -229,6 +235,7 @@ namespace KartGame.AI
                     AgentReset();
                 }
             }
+            AddReward(sum * PowerUpPenalty);
         }
 
         public override void AgentAction(float[] vectorAction)

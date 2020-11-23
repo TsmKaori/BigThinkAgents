@@ -127,7 +127,7 @@ namespace KartGame.KartSystems
 
         // can the kart move?
         bool canMove = true;
-        List<StatPowerup> activePowerupList = new List<StatPowerup>();
+        public List<StatPowerup> activePowerupList = new List<StatPowerup>();
         GameObject lastGroundCollided = null;
         ArcadeKart.Stats finalStats;
 
