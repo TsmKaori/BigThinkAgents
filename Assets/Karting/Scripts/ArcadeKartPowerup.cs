@@ -53,6 +53,7 @@ public class ArcadeKartPowerup : MonoBehaviour {
                 kart.AddPowerup(this.boostStats);
                 onPowerupActivated.Invoke();
                 isCoolingDown = true;
+				boostStats.ElapsedTime = 0; //speedpad stays active
 
                 if (disableGameObjectWhenActivated) this.gameObject.SetActive(false);
             }
