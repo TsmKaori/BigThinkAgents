@@ -221,7 +221,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -326,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -341,7 +341,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -351,17 +351,17 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.699997
+      value: -43.27
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9000001
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.01
+      value: 21.04
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -386,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -415,12 +415,12 @@ PrefabInstance:
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.modifiers.TopSpeed
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.modifiers.Acceleration
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
@@ -430,22 +430,22 @@ PrefabInstance:
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.MaxTime
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: cooldown
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.modifiers.Braking
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.ElapsedTime
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2047336664104694662, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
@@ -688,6 +688,201 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &364319894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1096058403}
+    m_Modifications:
+    - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
+        type: 3}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[0]
+      value: 
+      objectReference: {fileID: 1118908636}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[1]
+      value: 
+      objectReference: {fileID: 1806667190}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[2]
+      value: 
+      objectReference: {fileID: 680297381}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[3]
+      value: 
+      objectReference: {fileID: 260878375}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[4]
+      value: 
+      objectReference: {fileID: 585385429}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[5]
+      value: 
+      objectReference: {fileID: 355657439}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[6]
+      value: 
+      objectReference: {fileID: 2025797480}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[7]
+      value: 
+      objectReference: {fileID: 985346437}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[8]
+      value: 
+      objectReference: {fileID: 812133070}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[9]
+      value: 
+      objectReference: {fileID: 1440977172}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[10]
+      value: 
+      objectReference: {fileID: 1979195189}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[11]
+      value: 
+      objectReference: {fileID: 2066162341}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[12]
+      value: 
+      objectReference: {fileID: 438859091}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[13]
+      value: 
+      objectReference: {fileID: 961309583}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Colliders.Array.data[14]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: ShowRaycasts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: PassCheckpointReward
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719434, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_Name
+      value: KartClassic_MLAgent (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: baseStats.Braking
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: baseStats.AddedGravity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -43.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9993902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.034918975
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -184.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a54955f164002d42b1092df8c7b1c49, type: 3}
 --- !u!4 &386714427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
@@ -838,7 +1033,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -933,7 +1128,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -943,7 +1138,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -958,7 +1153,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1003,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1276,7 +1471,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1371,7 +1566,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1381,7 +1576,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1396,7 +1591,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1441,7 +1636,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1477,7 +1672,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1572,7 +1767,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1582,7 +1777,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1597,7 +1792,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1642,7 +1837,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -1671,12 +1866,12 @@ PrefabInstance:
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.modifiers.TopSpeed
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.modifiers.Acceleration
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
@@ -1686,27 +1881,27 @@ PrefabInstance:
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.MaxTime
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: cooldown
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.modifiers.Braking
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.PowerUpID
-      value: -5
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1957102644646649599, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
       propertyPath: boostStats.ElapsedTime
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2047336664104694662, guid: ca718117a11f745b292c7dba21f42c00,
         type: 3}
@@ -2061,7 +2256,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2156,7 +2351,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2166,7 +2361,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2181,7 +2376,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2226,7 +2421,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2401,6 +2596,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 603897997}
+  - {fileID: 805725439}
   - {fileID: 488007670}
   - {fileID: 386714427}
   - {fileID: 863387284}
@@ -2409,7 +2605,7 @@ Transform:
   - {fileID: 745531815}
   - {fileID: 1662761305}
   - {fileID: 1574023791}
-  - {fileID: 805725439}
+  - {fileID: 2017842269}
   - {fileID: 1803290042}
   m_Father: {fileID: 550285450}
   m_RootOrder: 0
@@ -2500,7 +2696,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2595,7 +2791,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2605,7 +2801,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2620,7 +2816,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2665,197 +2861,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -184.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4a54955f164002d42b1092df8c7b1c49, type: 3}
---- !u!1001 &1253436862
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 386714427}
-    m_Modifications:
-    - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
-        type: 3}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[0]
-      value: 
-      objectReference: {fileID: 1118908636}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[1]
-      value: 
-      objectReference: {fileID: 1806667190}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[2]
-      value: 
-      objectReference: {fileID: 680297381}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[3]
-      value: 
-      objectReference: {fileID: 260878375}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[4]
-      value: 
-      objectReference: {fileID: 585385429}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[5]
-      value: 
-      objectReference: {fileID: 355657439}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[6]
-      value: 
-      objectReference: {fileID: 2025797480}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[7]
-      value: 
-      objectReference: {fileID: 985346437}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[8]
-      value: 
-      objectReference: {fileID: 812133070}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[9]
-      value: 
-      objectReference: {fileID: 1440977172}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[10]
-      value: 
-      objectReference: {fileID: 1979195189}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[11]
-      value: 
-      objectReference: {fileID: 2066162341}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[12]
-      value: 
-      objectReference: {fileID: 438859091}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[13]
-      value: 
-      objectReference: {fileID: 961309583}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Colliders.Array.data[14]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: ShowRaycasts
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: SpeedReward
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: agentParameters.maxStep
-      value: 4000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: TowardsCheckpointReward
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719434, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_Name
-      value: KartClassic_MLAgent (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: baseStats.Braking
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: baseStats.AddedGravity
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.0523285
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0034544468
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2885,7 +2891,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2980,7 +2986,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2990,7 +2996,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3005,7 +3011,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3050,7 +3056,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3217,7 +3223,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3312,7 +3318,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3322,7 +3328,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3337,7 +3343,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3382,7 +3388,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3443,7 +3449,7 @@ Transform:
   - {fileID: 438859090}
   - {fileID: 961309582}
   m_Father: {fileID: 1096058403}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1803707777
 PrefabInstance:
@@ -3456,7 +3462,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 0a3505d6f1a9f7944a280b00c007694a,
+      objectReference: {fileID: 5022602860645237092, guid: 0426aa0124e691843915dc59d3b17960,
         type: 3}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3551,7 +3557,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: SpeedReward
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3561,7 +3567,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: TowardsCheckpointReward
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3576,7 +3582,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: baseStats.Braking
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719435, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3621,7 +3627,7 @@ PrefabInstance:
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3797,6 +3803,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e7d858d549e309499c3a0dca9f8d41a, type: 3}
+--- !u!4 &2017842269 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 364319894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2025797478
 GameObject:
   m_ObjectHideFlags: 0
