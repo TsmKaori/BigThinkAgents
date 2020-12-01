@@ -206,7 +206,7 @@ namespace KartGame.AI
             var nextCollider  = Colliders[next];
             var direction     = (nextCollider.transform.position - kart.transform.position).normalized;
             AddVectorObs(Vector3.Dot(kart.Rigidbody.velocity.normalized, direction));
-
+            AddVectorObs(new List<float>{ kart.Rigidbody.position.x, kart.Rigidbody.position.y, kart.Rigidbody.position.z});
             if (ShowRaycasts)
             {
                 Debug.DrawLine(AgentSensorTransform.position, nextCollider.transform.position, Color.magenta);
