@@ -1,8 +1,7 @@
 import argparse as ap 
 import numpy as np 
 import matplotlib.pyplot as mp 
-
-
+from scipy.ndimage.filters import uniform_filter1d
 #Function to parse lines of relevant data into triples in format : (mean reward, standard deviation, time)
 def parse_lines(lines):
     triple_array = [] # will hold all parsed triples
@@ -29,7 +28,6 @@ def parse_lines(lines):
         triple_array.append((reward, dev, time_elapsed))
     return triple_array
 
-
 #Setup command line arguments, afterwards args.data holds the file name
 parser = ap.ArgumentParser()
 parser.add_argument("data", help="The file containing the relevant data.")
@@ -47,20 +45,34 @@ data_triples = parse_lines(relevant_lines)
 avg_reward_data = [triple[0] for triple in data_triples]
 std_reward_data = [triple[1] for triple in data_triples]
 time_elapsed = [triple[2] for triple in data_triples]
-
+episodes = np.arange(1, len(avg_reward_data)+1)
 #Plot
-mp.plot(time_elapsed, std_reward_data)
-mp.xlabel('Time (s)')
+mp.plot(episodes, std_reward_data)
+mp.xlabel('Episodes')
 mp.ylabel('Standard Deviation')
 mp.savefig("std_dev.png")
 
 #Clear plot, make new plot
 mp.clf()
 
-mp.plot(time_elapsed, avg_reward_data)
-mp.xlabel('Time (s)')
+mp.plot(episodes, avg_reward_data)
+mp.xlabel('Episodes')
 mp.ylabel('Average Reward')
 mp.savefig('avg_reward.png')
 
+n =100 # Value used in moving average filter from scipy
 
+mp.clf()
+
+mp.plot(episodes, uniform_filter1d(avg_reward_data, size=n))
+mp.xlabel('Episodes')
+mp.ylabel('Average Reward')
+mp.savefig('avg_reward_smooth.png')
+
+mp.clf()
+
+mp.plot(episodes, uniform_filter1d(std_reward_data, size=n))
+mp.xlabel('Episodes')
+mp.ylabel('Standard Deviation')
+mp.savefig('std_dev_smooth.png')
 
